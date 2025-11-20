@@ -12,3 +12,4 @@ penonton[0].length hingga penonton[3].length memiliki nilai yang sama yaitu 2 ka
     kekurangan foreach : 
     - Jika butuh tahu elemen berada di baris/kolom ke berapa, foreach tidak menyediakan indeks
     - Tidak bisa mengubah posisi elemen tertentu berdasarkan indeks
+11. Indeks baris maksimal = 3
