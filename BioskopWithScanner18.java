@@ -27,7 +27,17 @@ public class BioskopWithScanner18 {
                     kolom = sc.nextInt();
                     sc.nextLine();
 
+                    if (baris < 1 || baris > 4) {
+                        System.out.println("Error: Baris tidak tersedia! (Hanya 1-4)");
+                        break;
+                    }
+                    if (kolom < 1 || kolom > 2) {
+                        System.out.println("Error: Kolom tidak tersedia! (Hanya 1-2)");
+                        break;
+                    }
+
                     penonton[baris-1][kolom-1] = nama;
+                    
                     break;
             
                 case 2:
