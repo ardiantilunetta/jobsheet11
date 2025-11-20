@@ -22,3 +22,4 @@ Percobaan 2
 Percobaan 3
 2. Arrays.toString() digunakan untuk mengubah sebuah array menjadi bentuk String sehingga bisa ditampilkan dengan mudah menggunakan System.out.println()
 3. nilai default array int = 0
+5. tidak, panjang array tidak bisa diubah setelah diinstansiasi
