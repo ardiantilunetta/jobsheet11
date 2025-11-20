@@ -21,24 +21,34 @@ public class BioskopWithScanner18 {
                 case 1:
                     System.out.print("Masukkan nama: ");
                     nama = sc.nextLine();
-                    System.out.print("Masukkan baris: ");
-                    baris = sc.nextInt();
-                    System.out.print("Masukkan kolom: ");
-                    kolom = sc.nextInt();
-                    sc.nextLine();
 
-                    if (baris < 1 || baris > 4) {
-                        System.out.println("Error: Baris tidak tersedia! (Hanya 1-4)");
+                    while (true) {
+                        System.out.print("Masukkan baris: ");
+                        baris = sc.nextInt();
+                        System.out.print("Masukkan kolom: ");
+                        kolom = sc.nextInt();
+                        sc.nextLine();
+
+                        if (baris < 1 || baris > 4) {
+                            System.out.println("Error: Baris tidak tersedia! (Hanya 1-4)");
+                            break;
+                        }
+                        if (kolom < 1 || kolom > 2) {
+                            System.out.println("Error: Kolom tidak tersedia! (Hanya 1-2)");
+                            break;
+                        }
+
+                        if (penonton[baris - 1][kolom - 1] != null) {
+                            System.out.println("Warning: Kursi ini sudah terisi oleh penonton lain!");
+                            System.out.println("Silakan pilih baris dan kolom yang lain.\n");
+                            continue;
+                        }
+
+                        penonton[baris-1][kolom-1] = nama;
+                        System.out.println("Data berhasil disimpan!");
                         break;
                     }
-                    if (kolom < 1 || kolom > 2) {
-                        System.out.println("Error: Kolom tidak tersedia! (Hanya 1-2)");
-                        break;
-                    }
-
-                    penonton[baris-1][kolom-1] = nama;
                     
-                    break;
             
                 case 2:
                     System.out.println("---- DAFTAR PENONTON ----");
