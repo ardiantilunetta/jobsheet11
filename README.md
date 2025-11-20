@@ -18,3 +18,6 @@ penonton[0].length hingga penonton[3].length memiliki nilai yang sama yaitu 2 ka
 
 Percobaan 2
 1. Pengisian array tidak harus berurutan mulai dari 0, boleh acak sesuai inputan user tidak akan memengaruhi struktur array asalkan indeksnya benar
+
+Percobaan 3
+2. Arrays.toString() digunakan untuk mengubah sebuah array menjadi bentuk String sehingga bisa ditampilkan dengan mudah menggunakan System.out.println()
