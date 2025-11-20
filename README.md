@@ -15,3 +15,6 @@ penonton[0].length hingga penonton[3].length memiliki nilai yang sama yaitu 2 ka
 11. Indeks baris maksimal = 3
 12. Indeks kolom maksimal = 1
 13. String.join() digunakan untuk menggabungkan beberapa string menjadi satu string
+
+Percobaan 2
+1. Pengisian array tidak harus berurutan mulai dari 0, boleh acak sesuai inputan user tidak akan memengaruhi struktur array asalkan indeksnya benar
