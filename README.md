@@ -14,3 +14,4 @@ penonton[0].length hingga penonton[3].length memiliki nilai yang sama yaitu 2 ka
     - Tidak bisa mengubah posisi elemen tertentu berdasarkan indeks
 11. Indeks baris maksimal = 3
 12. Indeks kolom maksimal = 1
+13. String.join() digunakan untuk menggabungkan beberapa string menjadi satu string
