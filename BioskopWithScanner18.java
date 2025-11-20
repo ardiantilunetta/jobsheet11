@@ -54,7 +54,12 @@ public class BioskopWithScanner18 {
                     System.out.println("---- DAFTAR PENONTON ----");
                     for (int i = 0; i < penonton.length; i++) {
                         for (int j = 0; j < penonton[i].length; j++) {
-                            System.out.print(penonton[i][j]+"\t");
+                            if (penonton[i][j] == null) {
+                                isi = "***";
+                            } else {
+                                isi = penonton[i][j];
+                            }
+                            System.out.print(isi+"\t");
                         }
                         System.out.println();
                     }
