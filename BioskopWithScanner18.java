@@ -5,7 +5,7 @@ public class BioskopWithScanner18 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int baris, kolom, pilihan;
-        String nama, next;
+        String nama, isi;
         String[][] penonton = new String[4][2];
 
         do {
@@ -16,6 +16,39 @@ public class BioskopWithScanner18 {
             System.out.print("Pilih menu: ");
             pilihan = sc.nextInt();
             sc.nextLine();
+
+            switch (pilihan) {
+                case 1:
+                    System.out.print("Masukkan nama: ");
+                    nama = sc.nextLine();
+                    System.out.print("Masukkan baris: ");
+                    baris = sc.nextInt();
+                    System.out.print("Masukkan kolom: ");
+                    kolom = sc.nextInt();
+                    sc.nextLine();
+
+                    penonton[baris-1][kolom-1] = nama;
+                    break;
+            
+                case 2:
+                    System.out.println("---- DAFTAR PENONTON ----");
+                    for (int i = 0; i < penonton.length; i++) {
+                        for (int j = 0; j < penonton[i].length; j++) {
+                            System.out.print(penonton[i][j]+"\t");
+                        }
+                        System.out.println();
+                    }
+                    break;
+                    
+                case 3:
+                    System.out.println("Program selesai.");
+                    break;
+
+
+                default:
+                    System.out.println("Menu tidak valid");;
+            }
+
         } while (pilihan != 3);
 
         // while (true) {
