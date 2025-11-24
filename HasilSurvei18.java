@@ -5,6 +5,7 @@ public class HasilSurvei18 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int hasilsurvey[][] = new int[10][6];
+        double totalRata = 0;
 
         for (int r = 0 ; r < hasilsurvey.length ; r++) {
             System.out.println("Responden "+(r+1));
@@ -43,6 +44,9 @@ public class HasilSurvei18 {
                 pertanyaan += hasilsurvey [r][p];
             }
             System.out.println("Pertanyaan "+(p+1)+" : "+(pertanyaan/hasilsurvey.length));
+            totalRata += pertanyaan/hasilsurvey.length;
         }
+
+        System.out.println("RATA RATA KESELURUHAN : "+totalRata/hasilsurvey[0].length);
     }
 }
