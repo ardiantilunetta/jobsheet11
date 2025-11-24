@@ -4,12 +4,12 @@ public class HasilSurvei18 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int hasilsurvey[][] = new int[2][6];
+        int hasilsurvey[][] = new int[10][6];
 
-        for (int r = 0 ; r < 2 ; r++) {
+        for (int r = 0 ; r < hasilsurvey.length ; r++) {
             System.out.println("Responden "+(r+1));
 
-            for (int p = 0 ; p < 6 ; p++) {
+            for (int p = 0 ; p < hasilsurvey[r].length ; p++) {
 
                 while (true) {
                     System.out.print("Nilai pertanyaan " + (p+1) + " : ");
@@ -33,6 +33,16 @@ public class HasilSurvei18 {
                 responden += hasilsurvey [r][p];
             }
             System.out.println("Responden "+(r+1)+" : "+(responden/hasilsurvey[r].length));
+        }
+
+        System.out.println("---- RATA RATA SETIAP PERTANYAAN ----");
+        for (int p = 0 ; p < hasilsurvey[0].length ; p++) {
+            double pertanyaan = 0;
+
+            for (int r = 0 ; r < hasilsurvey.length ; r++) {
+                pertanyaan += hasilsurvey [r][p];
+            }
+            System.out.println("Pertanyaan "+(p+1)+" : "+(pertanyaan/hasilsurvey.length));
         }
     }
 }
