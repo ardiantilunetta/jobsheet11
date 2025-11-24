@@ -8,9 +8,20 @@ public class HasilSurvei18 {
 
         for (int r = 0 ; r < 10 ; r++) {
             System.out.println("Responden "+(r+1));
+
             for (int n = 0 ; n < 6 ; n++) {
-                System.out.print("Nilai pertanyaan "+(n+1)+" : ");
-                hasilsurvey[r][n] = sc.nextInt();
+                
+                while (true) {
+                    System.out.print("Nilai pertanyaan " + (n+1) + " : ");
+                    int nilai = sc.nextInt();
+
+                    if (nilai >= 1 && nilai <= 5) {
+                        hasilsurvey[r][n] = nilai;
+                        break;
+                    } else {
+                        System.out.println("Tidak valid! Masukkan nilai 1-5");
+                    }
+                }
             }
         }
     }
